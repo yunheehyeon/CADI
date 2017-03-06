@@ -52,8 +52,8 @@ public class secondActivity extends AppCompatActivity implements View.OnClickLis
     public void onClick(View v) {
             switch (v.getId()){
                 case R.id.btn_img:
-                    imgFrame = (FrameLayout)findViewById(R.id.frame_img); // 보여주는 장소
-                    inflater = (LayoutInflater) getBaseContext().getSystemService(LAYOUT_INFLATER_SERVICE); //XML 문서에 정의된 레이아웃과 차일드 뷰의 속성을 읽어 실제 뷰 객체를 생성해 내는 동작.
+                    imgFrame = (FrameLayout)findViewById(R.id.frame_img);
+                    inflater = (LayoutInflater) getBaseContext().getSystemService(LAYOUT_INFLATER_SERVICE);
                     itemView = inflater.inflate(R.layout.second_image, imgFrame , true);
                     //imgView = (ImageView) itemView.findViewById(R.id.view_img);
 
